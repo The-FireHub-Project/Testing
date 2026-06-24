@@ -23,45 +23,20 @@
 </h1>
 
 <p>
-  <a href="https://github.com/The-FireHub-Project/Testing">
+  <a href="https://github.com/The-FireHub-Project/Testing/commits/develop/">
     <img
-      src="https://img.shields.io/github/created-at/The-FireHub-Project/Testing?style=flat&logo=github&logoColor=959da5&label=created%20at&labelColor=31373e"
-      alt="GitHub created at"
-  /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/commits/master/">
-    <img
-      src="https://img.shields.io/github/last-commit/The-FireHub-Project/Testing/master?style=flat&logo=github&logoColor=959da5&label=last%20commit%20(branch)&labelColor=31373e"
+      src="https://img.shields.io/github/last-commit/The-FireHub-Project/Testing/develop?style=flat&logo=github&logoColor=959da5&label=last%20commit%20(branch)&labelColor=31373e"
       alt="GitHub last commit (branch)"
   /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/commits/master/">
+  <a href="https://github.com/The-FireHub-Project/Testing/commits/develop/">
     <img
-      src="https://img.shields.io/github/commit-activity/m/The-FireHub-Project/Testing/master?style=flat&logo=github&logoColor=959da5&label=commit%20activity%20(branch)&labelColor=31373e"
+      src="https://img.shields.io/github/commit-activity/m/The-FireHub-Project/Testing/develop?style=flat&logo=github&logoColor=959da5&label=commit%20activity%20(branch)&labelColor=31373e"
       alt="GitHub activity (branch)"
   /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/graphs/contributors/">
+  <a href="https://github.com/The-FireHub-Project/Testing/compare/master...develop/">
     <img
-      src="https://img.shields.io/github/contributors/The-FireHub-Project/Testing?style=flat&logo=github&logoColor=959da5&label=contributors&labelColor=31373e"
-      alt="GitHub contributors"
-  /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/">
-    <img
-      src="https://img.shields.io/github/languages/count/The-FireHub-Project/Testing?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjOTU5ZGE1Ij48cGF0aCBkPSJNMzIwLTI0MCA4MC00ODBsMjQwLTI0MCA1NyA1Ny0xODQgMTg0IDE4MyAxODMtNTYgNTZabTMyMCAwLTU3LTU3IDE4NC0xODQtMTgzLTE4MyA1Ni01NiAyNDAgMjQwLTI0MCAyNDBaIi8+PC9zdmc+&logoColor=959da5&label=language%20count&labelColor=31373e"
-      alt="GitHub language count"
-  /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/">
-    <img
-      src="https://img.shields.io/github/languages/top/The-FireHub-Project/Testing?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjOTU5ZGE1Ij48cGF0aCBkPSJNMzIwLTI0MCA4MC00ODBsMjQwLTI0MCA1NyA1Ny0xODQgMTg0IDE4MyAxODMtNTYgNTZabTMyMCAwLTU3LTU3IDE4NC0xODQtMTgzLTE4MyA1Ni01NiAyNDAgMjQwLTI0MCAyNDBaIi8+PC9zdmc+&logoColor=959da5&label=top%20language&labelColor=31373e"
-      alt="GitHub top language"
-  /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/">
-    <img
-      src="https://img.shields.io/github/repo-size/The-FireHub-Project/Testing?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjOTU5ZGE1Ij48cGF0aCBkPSJNMzIwLTI0MCA4MC00ODBsMjQwLTI0MCA1NyA1Ny0xODQgMTg0IDE4MyAxODMtNTYgNTZabTMyMCAwLTU3LTU3IDE4NC0xODQtMTgzLTE4MyA1Ni01NiAyNDAgMjQwLTI0MCAyNDBaIi8+PC9zdmc+&logoColor=959da5&label=repo%20size&labelColor=31373e"
-      alt="GitHub repo size"
-  /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/">
-    <img
-      src="https://img.shields.io/github/languages/code-size/The-FireHub-Project/Testing?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjOTU5ZGE1Ij48cGF0aCBkPSJNMzIwLTI0MCA4MC00ODBsMjQwLTI0MCA1NyA1Ny0xODQgMTg0IDE4MyAxODMtNTYgNTZabTMyMCAwLTU3LTU3IDE4NC0xODQtMTgzLTE4MyA1Ni01NiAyNDAgMjQwLTI0MCAyNDBaIi8+PC9zdmc+&logoColor=959da5&label=code%20size&labelColor=31373e"
-      alt="GitHub code size"
+      src="https://img.shields.io/github/commits-difference/The-FireHub-Project/Testing?base=master&head=develop&style=flat&logo=github&logoColor=959da5&label=ahead%20master&labelColor=31373e"
+      alt="GitHub commit difference between two branches"
   /></a>
 </p>
 
@@ -80,55 +55,47 @@ This layer is designed to ensure that FireHub architectural rules are continuous
 
 ---
 
-## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Repository Purpose
+## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Development Branch
 
-This repository defines the shared testing and governance layer for the FireHub ecosystem.
+⚠️ **This is the `develop` branch**
 
-It provides a unified foundation for validating architectural rules, Core contracts, and system behavior across all FireHub packages.
+- Unstable
+- APIs may change without notice
+- Not intended for production use
 
-It ensures that all components are tested in a consistent, deterministic, and architecture-aware manner, independent of runtime implementation details.
+## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Branch Purpose
 
-## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Security
+The `develop` branch is the **primary integration branch** for all ongoing development.
 
-For security reporting and guidelines, please refer to our [SECURITY.md](https://github.com/The-FireHub-Project/.github/blob/master/.github/SECURITY.md) file.
+It serves as the staging area where:
+- Feature branches are merged
+- Bug fixes are integrated
+- Experimental work is stabilized
+- Code is prepared for upcoming releases
 
-## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Community
+All **release branches** are created **from `develop`**.
 
-![GitHub watchers](https://img.shields.io/github/watchers/The-FireHub-Project/Testing?style=social)
-![GitHub Repo stars](https://img.shields.io/github/stars/The-FireHub-Project/Testing?style=social)
-![GitHub forks](https://img.shields.io/github/forks/The-FireHub-Project/Testing?style=social)
+## Stability Guarantee
 
-- Be sure to review the [Code of Conduct](https://github.com/The-FireHub-Project/.github/blob/master/.github/CODE_OF_CONDUCT.md).
-- Read a [Contributing](https://github.com/The-FireHub-Project/.github/blob/master/.github/CONTRIBUTING.md) file to see how you can contribute to this project.
-- Read our [Security policy](https://github.com/The-FireHub-Project/.github/blob/master/.github/SECURITY.md) file to see how you can report a vulnerability.
-- Review the project [Governance model](https://github.com/The-FireHub-Project/.github/blob/master/.github/GOVERNANCE.md), including roles, decision-making, RFC process, and releases.
+❌ No backward compatibility guarantee  
+❌ APIs may change without notice  
+❌ Behavior may be incomplete or inconsistent  
+❌ Breaking changes are expected
 
-## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Support
+This branch is intended **only for contributors and advanced testers**.
 
-<p>
-  <a href="https://github.com/The-FireHub-Project/Testing/issues?q=is%3Aissue%20state%3Aopen">
-    <img
-      src="https://img.shields.io/github/issues/The-FireHub-Project/Testing?style=flat&logo=github&logoColor=959da5&label=in%20progress%20issues&labelColor=31373e"
-      alt="GitHub in-progress issues"
-  /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/issues?q=is%3Aissue">
-    <img
-      src="https://img.shields.io/github/issues-search?query=repo%3AThe-FireHub-Project%Testing&style=flat&logo=github&logoColor=959da5&label=total%20issues&labelColor=31373e"
-      alt="GitHub total issues"
-  /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/issues?q=is%3Apr%20is%3Aopen">
-    <img
-      src="https://img.shields.io/github/issues-pr/The-FireHub-Project/Testing?style=flat&logo=github&logoColor=959da5&labelColor=31373e"
-      alt="GitHub opened pull requests"
-  /></a>
-</p>
+## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Composer Usage (Not Recommended)
 
-For help with FireHub products, please refer to the following resources:
+For internal testing only:
 
-- **General questions & discussions**: [GitHub Discussions](https://github.com/orgs/The-FireHub-Project/discussions)
-- **Bug reports & issues**: [Support](https://github.com/The-FireHub-Project/Testing/issues)
-- **Documentation & guides**: [FireHub Docs](https://the-firehub-project.github.io)
-- **Commercial support** (Pro/Enterprise): contact your account manager
+```json
+{
+  "require": {
+    "the-firehub-project/testing": "dev-develop"
+  }
+}
+```
+⚠️ Never use dev-develop in production.
 
 ## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Authors and Contributors
 
