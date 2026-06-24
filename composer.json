@@ -1,0 +1,48 @@
+{
+  "name": "the-firehub-project/testing",
+  "description": "A shared testing toolkit for the FireHub ecosystem that provides standardized testing infrastructure, assertions, and base test utilities for validating Core, Runtime, and higher-level architectural layers.",
+  "type": "library",
+  "keywords": ["php", "firehub", "phpunit", "testing"],
+  "homepage": "https://the-firehub-project.github.io/testing",
+  "license": "MIT",
+  "require": {
+    "php": "^8.0",
+    "phpunit/phpunit": "^13.0"
+  },
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Danijel Galić",
+      "email": "danijel.galic@outlook.com",
+      "homepage": "https://github.com/dieselxxx",
+      "role": "Owner"
+    }
+  ],
+  "support": {
+    "email": "danijel.galic@outlook.com",
+    "issues": "https://github.com/The-FireHub-Project/Testing/issues",
+    "forum": "https://github.com/orgs/The-FireHub-Project/discussions",
+    "source": "https://github.com/The-FireHub-Project/Testing",
+    "docs": "https://the-firehub-project.github.io/Testing",
+    "security": "https://github.com/The-FireHub-Project/Testing/security/policy"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/The-FireHub-Project"
+    }
+  ],
+  "config": {
+    "prepend-autoloader": false,
+    "optimize-autoloader": true,
+    "platform-check": true
+  },
+  "extra": {
+    "firehub": {
+      "layer": "none",
+      "edition": "standard",
+      "role": "governance",
+      "criticality": "medium"
+    }
+  }
+}
