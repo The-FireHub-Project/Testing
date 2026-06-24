@@ -10,6 +10,11 @@
     "phpunit/phpunit": "^13.0"
   },
   "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "FireHub\\Testing\\": "src"
+    }
+  },
   "authors": [
     {
       "name": "Danijel Galić",
