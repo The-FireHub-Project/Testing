@@ -23,19 +23,19 @@
 </h1>
 
 <p>
-  <a href="https://github.com/The-FireHub-Project/Testing/commits/feature/phpunit-integration-and-initial-tests/">
+  <a href="https://github.com/The-FireHub-Project/Testing/commits/develop/">
     <img
-      src="https://img.shields.io/github/last-commit/The-FireHub-Project/Testing/feature/phpunit-integration-and-initial-tests?style=flat&logo=github&logoColor=959da5&label=last%20commit%20(branch)&labelColor=31373e"
+      src="https://img.shields.io/github/last-commit/The-FireHub-Project/Testing/develop?style=flat&logo=github&logoColor=959da5&label=last%20commit%20(branch)&labelColor=31373e"
       alt="GitHub last commit (branch)"
   /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/commits/feature/phpunit-integration-and-initial-tests/">
+  <a href="https://github.com/The-FireHub-Project/Testing/commits/develop/">
     <img
-      src="https://img.shields.io/github/commit-activity/m/The-FireHub-Project/Testing/feature/phpunit-integration-and-initial-tests?style=flat&logo=github&logoColor=959da5&label=commit%20activity%20(branch)&labelColor=31373e"
+      src="https://img.shields.io/github/commit-activity/m/The-FireHub-Project/Testing/develop?style=flat&logo=github&logoColor=959da5&label=commit%20activity%20(branch)&labelColor=31373e"
       alt="GitHub activity (branch)"
   /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/compare/develop...feature/phpunit-integration-and-initial-tests/">
+  <a href="https://github.com/The-FireHub-Project/Testing/compare/master...develop/">
     <img
-      src="https://img.shields.io/github/commits-difference/The-FireHub-Project/Testing?base=develop&head=feature/phpunit-integration-and-initial-tests&style=flat&logo=github&logoColor=959da5&label=ahead%20develop&labelColor=31373e"
+      src="https://img.shields.io/github/commits-difference/The-FireHub-Project/Testing?base=master&head=develop&style=flat&logo=github&logoColor=959da5&label=ahead%20master&labelColor=31373e"
       alt="GitHub commit difference between two branches"
   /></a>
 </p>
@@ -55,81 +55,47 @@ This layer is designed to ensure that FireHub architectural rules are continuous
 
 ---
 
-## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Testcase Base – Development Branch
+## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Development Branch
 
-⚠️ **This is the `development` branch**
+⚠️ **This is the `develop` branch**
 
 - Unstable
 - APIs may change without notice
 - Not intended for production use
 
-### Related
-
-- Target Release: **v0.0.0**
-- Repository: FireHub Testing Toolkit
-
-### Pull request
-
-<p>
-  <a href="https://github.com/The-FireHub-Project/Testing/pull/2/">
-    <img
-      src="https://img.shields.io/github/pulls/detail/title/The-FireHub-Project/Testing/2?style=flat&logo=github&logoColor=959da5&label=title&labelColor=31373e"
-      alt="GitHub pull request title"
-  /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/pull/2/">
-    <img
-      src="https://img.shields.io/github/pulls/detail/author/The-FireHub-Project/Testing/2?style=flat&logo=github&logoColor=959da5&labelColor=31373e"
-      alt="GitHub pull request author"
-  /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/pull/2/">
-    <img
-      src="https://img.shields.io/github/pulls/detail/age/The-FireHub-Project/Testing/2?style=flat&logo=github&logoColor=959da5&labelColor=31373e"
-      alt="GitHub pull request created"
-  /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/pull/2/">
-    <img
-      src="https://img.shields.io/github/pulls/detail/comments/The-FireHub-Project/Testing/2?style=flat&logo=github&logoColor=959da5&labelColor=31373e"
-      alt="GitHub pull request comments"
-  /></a>
-</p>
-
 ## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Branch Purpose
 
-This branch introduces the **base testing abstraction (`FireHubTestCase`)** for the FireHub ecosystem.
+The `develop` branch is the **primary integration branch** for all ongoing development.
 
-It establishes a unified foundation for all test suites across:
+It serves as the staging area where:
+- Feature branches are merged
+- Bug fixes are integrated
+- Experimental work is stabilized
+- Code is prepared for upcoming releases
 
-- Core Standard
-- Core Professional
-- Core Enterprise
-- Runtime Foundation (consumers only)
-- Future FireHub testing extensions
+All **release branches** are created **from `develop`**.
 
-The goal is to remove direct coupling to `PHPUnit\Framework\TestCase` in application-level tests and introduce a **shared FireHub testing entry point**.
+## Stability Guarantee
 
-## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Architectural Goal
+❌ No backward compatibility guarantee  
+❌ APIs may change without notice  
+❌ Behavior may be incomplete or inconsistent  
+❌ Breaking changes are expected
 
-Introduce a **standardized testing root layer** that:
+This branch is intended **only for contributors and advanced testers**.
 
-- Provides a single inheritance point for all FireHub tests
-- Decouples ecosystem tests from direct PHPUnit dependency usage
-- Enables future extension of testing behavior (assertions, bootstrapping, validation rules)
-- Serves as the foundation for a structured testing hierarchy (CoreTestCase, IntegrationTestCase, ArchitectureTestCase)
+## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Composer Usage (Not Recommended)
 
-This ensures testing evolves as a **governed architectural layer**, not a collection of isolated test implementations.
+For internal testing only:
 
-## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Core Concept
-
-A FireHub test case is:
-
-> A standardized, extensible abstraction over PHPUnit that acts as the root entry point for all FireHub testing logic.
-
-It is designed to:
-
-- unify test structure across repositories
-- enable architectural enforcement through tests
-- provide a stable base for future testing capabilities
-- ensure consistency in how FireHub systems are validated
+```json
+{
+  "require": {
+    "the-firehub-project/testing": "dev-develop"
+  }
+}
+```
+⚠️ Never use dev-develop in production.
 
 ## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Authors and Contributors
 
@@ -144,6 +110,6 @@ Architecture guidelines, design principles, and ecosystem documentation are avai
 
 ## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> License
 
-This software is licensed under the Apache-2.0 License.
+This software is licensed under the MIT License.
 
 For more details, read the full license [here](./LICENSE).
