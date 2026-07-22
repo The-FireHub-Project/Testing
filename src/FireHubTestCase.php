@@ -81,7 +81,7 @@ abstract class FireHubTestCase extends TestCase {
      *
      * @return void
      */
-    protected static function suppressPhpErrors (callable $callback, int $levels = E_WARNING):void {
+    protected function suppressPhpErrors (callable $callback, int $levels = E_WARNING):void {
 
         set_error_handler(static fn(int $severity):bool => ($severity & $levels) !== 0, $levels);
 
