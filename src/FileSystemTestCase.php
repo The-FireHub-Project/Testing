@@ -53,7 +53,7 @@ abstract class FileSystemTestCase extends FireHubTestCase {
 
         parent::setUp();
 
-        $this->tempDirectory = sys_get_temp_dir().'/firehub-test-'.uniqid('', true);
+        $this->temp_folder = sys_get_temp_dir().'/firehub-test-'.uniqid('', true);
 
         if (
             !mkdir($concurrentDirectory = $this->temp_folder)
@@ -69,7 +69,7 @@ abstract class FileSystemTestCase extends FireHubTestCase {
      */
     protected function tearDown ():void {
 
-        rmdir($this->tempDirectory);
+        rmdir($this->temp_folder);
 
         parent::tearDown();
 
