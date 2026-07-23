@@ -69,7 +69,9 @@ abstract class FileSystemTestCase extends FireHubTestCase {
      */
     protected function tearDown ():void {
 
-        rmdir($this->temp_folder);
+        $this->suppressPhpErrors(
+            fn() => rmdir($this->temp_folder)
+        );
 
         parent::tearDown();
 
