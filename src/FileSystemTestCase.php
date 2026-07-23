@@ -17,10 +17,8 @@ use RuntimeException;
 
 use function is_dir;
 use function mkdir;
-use function rmdir;
 use function sprintf;
 use function sys_get_temp_dir;
-use function uniqid;
 
 /**
  * ### File System Test Case
@@ -53,27 +51,12 @@ abstract class FileSystemTestCase extends FireHubTestCase {
 
         parent::setUp();
 
-        $this->temp_folder = sys_get_temp_dir().'/firehub-test-'.uniqid('', true);
+        $this->temp_folder = sys_get_temp_dir().'/firehub-test';
 
         if (
             !mkdir($concurrentDirectory = $this->temp_folder)
             && !is_dir($concurrentDirectory)
         ) throw new RuntimeException(sprintf('Directory "%s" was not created', $concurrentDirectory));
-
-    }
-
-    /**
-     * @inheritDoc
-     *
-     * @since 1.0.0
-     */
-    protected function tearDown ():void {
-
-        $this->suppressPhpErrors(
-            fn() => rmdir($this->temp_folder)
-        );
-
-        parent::tearDown();
 
     }
 
