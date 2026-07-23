@@ -45,6 +45,8 @@ abstract class FileSystemTestCase extends FireHubTestCase {
      *
      * @since 1.0.0
      *
+     * @uses \FireHub\Testing\FireHubTestCase::suppressPhpErrors() To suppress PHP errors.
+     *
      * @throws RuntimeException If the temporary directory cannot be created.
      */
     protected function setUp ():void {
@@ -53,10 +55,14 @@ abstract class FileSystemTestCase extends FireHubTestCase {
 
         $this->temp_folder = sys_get_temp_dir().'/firehub-test';
 
-        if (
-            !mkdir($concurrentDirectory = $this->temp_folder)
-            && !is_dir($concurrentDirectory)
-        ) throw new RuntimeException(sprintf('Directory "%s" was not created', $concurrentDirectory));
+        $this->suppressPhpErrors(
+            function() {
+                if (
+                    !mkdir($concurrentDirectory = $this->temp_folder)
+                    && !is_dir($concurrentDirectory)
+                ) throw new RuntimeException(sprintf('Directory "%s" was not created', $concurrentDirectory));
+            }
+        );
 
     }
 
