@@ -22,24 +22,20 @@
   /></a>
 </h1>
 
-[![PHPStan](https://github.com/The-FireHub-Project/Testing/actions/workflows/PHPStan.yml/badge.svg?branch=feature%2Ftesting-infrastructure)](https://github.com/The-FireHub-Project/Testing/actions/workflows/PHPStan.yml)
-[![PHPUnit](https://github.com/The-FireHub-Project/Testing/actions/workflows/PHPUnit.yml/badge.svg?branch=feature%2Ftesting-infrastructure)](https://github.com/The-FireHub-Project/Testing/actions/workflows/PHPUnit.yml)
-[![Codecov](https://codecov.io/gh/The-FireHub-Project/Testing/branch/feature%2Ftesting-infrastructure/graph/badge.svg?token=XW2YEONF51)](https://app.codecov.io/gh/The-FireHub-Project/Testing/tree/feature%2Ftesting-infrastructure)
-
 <p>
-  <a href="https://github.com/The-FireHub-Project/Testing/commits/feature/testing-infrastructure/">
+  <a href="https://github.com/The-FireHub-Project/Testing/commits/develop/">
     <img
-      src="https://img.shields.io/github/last-commit/The-FireHub-Project/Testing/feature/testing-infrastructure?style=flat&logo=github&logoColor=959da5&label=last%20commit%20(branch)&labelColor=31373e"
+      src="https://img.shields.io/github/last-commit/The-FireHub-Project/Testing/develop?style=flat&logo=github&logoColor=959da5&label=last%20commit%20(branch)&labelColor=31373e"
       alt="GitHub last commit (branch)"
   /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/commits/feature/testing-infrastructure/">
+  <a href="https://github.com/The-FireHub-Project/Testing/commits/develop/">
     <img
-      src="https://img.shields.io/github/commit-activity/m/The-FireHub-Project/Testing/feature/testing-infrastructure?style=flat&logo=github&logoColor=959da5&label=commit%20activity%20(branch)&labelColor=31373e"
+      src="https://img.shields.io/github/commit-activity/m/The-FireHub-Project/Testing/develop?style=flat&logo=github&logoColor=959da5&label=commit%20activity%20(branch)&labelColor=31373e"
       alt="GitHub activity (branch)"
   /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/compare/develop...feature/testing-infrastructure/">
+  <a href="https://github.com/The-FireHub-Project/Testing/compare/master...develop/">
     <img
-      src="https://img.shields.io/github/commits-difference/The-FireHub-Project/Testing?base=develop&head=feature/testing-infrastructure&style=flat&logo=github&logoColor=959da5&label=ahead%20develop&labelColor=31373e"
+      src="https://img.shields.io/github/commits-difference/The-FireHub-Project/Testing?base=master&head=develop&style=flat&logo=github&logoColor=959da5&label=ahead%20master&labelColor=31373e"
       alt="GitHub commit difference between two branches"
   /></a>
 </p>
@@ -59,89 +55,47 @@ This layer is designed to ensure that FireHub architectural rules are continuous
 
 ---
 
-## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Testing infrastructure – Development Branch
+## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Development Branch
 
-⚠️ **This is the `development` branch**
+⚠️ **This is the `develop` branch**
 
 - Unstable
 - APIs may change without notice
 - Not intended for production use
 
-### Related
-
-- Target Release: **v0.0.0**
-- Repository: FireHub Testing Toolkit
-
-### Pull request
-
-<p>
-  <a href="https://github.com/The-FireHub-Project/Testing/pull/4/">
-    <img
-      src="https://img.shields.io/github/pulls/detail/title/The-FireHub-Project/Testing/4?style=flat&logo=github&logoColor=959da5&label=title&labelColor=31373e"
-      alt="GitHub pull request title"
-  /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/pull/4/">
-    <img
-      src="https://img.shields.io/github/pulls/detail/author/The-FireHub-Project/Testing/4?style=flat&logo=github&logoColor=959da5&labelColor=31373e"
-      alt="GitHub pull request author"
-  /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/pull/4/">
-    <img
-      src="https://img.shields.io/github/pulls/detail/age/The-FireHub-Project/Testing/4?style=flat&logo=github&logoColor=959da5&labelColor=31373e"
-      alt="GitHub pull request created"
-  /></a>
-  <a href="https://github.com/The-FireHub-Project/Testing/pull/4/">
-    <img
-      src="https://img.shields.io/github/pulls/detail/comments/The-FireHub-Project/Testing/4?style=flat&logo=github&logoColor=959da5&labelColor=31373e"
-      alt="GitHub pull request comments"
-  /></a>
-</p>
-
 ## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Branch Purpose
 
-Introduce the `the-firehub-project/testing` package as a shared testing infrastructure library for the FireHub ecosystem.
+The `develop` branch is the **primary integration branch** for all ongoing development.
 
-This branch establishes a centralized location for reusable testing components such as Data Providers, Stubs, Fixtures, and common testing utilities that can be consumed by FireHub Core, Runtime, Adapter, and Capability repositories.
+It serves as the staging area where:
+- Feature branches are merged
+- Bug fixes are integrated
+- Experimental work is stabilized
+- Code is prepared for upcoming releases
 
-The goal is to avoid duplicated test infrastructure across repositories and provide a consistent testing foundation across the entire ecosystem.
+All **release branches** are created **from `develop`**.
 
-## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Architectural Goal
+## Stability Guarantee
 
-Create a framework-agnostic testing support layer that sits outside the production runtime while supporting all FireHub packages during development and verification.
+❌ No backward compatibility guarantee  
+❌ APIs may change without notice  
+❌ Behavior may be incomplete or inconsistent  
+❌ Breaking changes are expected
 
-The Testing package should:
+This branch is intended **only for contributors and advanced testers**.
 
-- Provide reusable test building blocks shared across repositories.
-- Keep testing concerns separated from Core contracts and Runtime execution logic.
-- Support multiple testing frameworks without coupling the package to a specific runner.
-- Improve the consistency, maintainability, and scalability of the FireHub test ecosystem.
-- Enable isolated testing of contracts, implementations, adapters, and capabilities.
+## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Composer Usage (Not Recommended)
 
-## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Core Concept
+For internal testing only:
 
-The Testing package provides reusable verification components instead of application logic.
-
-Core concepts:
-
-- **Data Providers**
-  - Shared datasets for repeatable test scenarios.
-  - Standardized valid, invalid, boundary, and edge-case inputs.
-
-- **Stubs**
-  - Lightweight implementations of contracts used to isolate behavior during testing.
-  - Used instead of production implementations when testing individual units.
-
-- **Fixtures**
-  - Reusable object and state creation helpers for complex test scenarios.
-
-- **Testing Utilities**
-  - Common assertions, helpers, and test support functionality.
-
-The package follows the principle:
-
-> Production code defines behavior. Testing infrastructure verifies behavior.
-
-The Testing package must never become a dependency of runtime execution. It exists only as a development and verification dependency.
+```json
+{
+  "require": {
+    "the-firehub-project/testing": "dev-develop"
+  }
+}
+```
+⚠️ Never use dev-develop in production.
 
 ## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> Authors and Contributors
 
@@ -156,6 +110,6 @@ Architecture guidelines, design principles, and ecosystem documentation are avai
 
 ## <img src="https://raw.githubusercontent.com/The-FireHub-Project/the-firehub-project.github.io/master/resources/graphics/icons/firehub.svg" width="15" alt="FireHub Icon"> License
 
-This software is licensed under the Apache-2.0 License.
+This software is licensed under the MIT License.
 
 For more details, read the full license [here](./LICENSE).
