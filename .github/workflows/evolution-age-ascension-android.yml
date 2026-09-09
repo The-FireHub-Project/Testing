@@ -118,6 +118,10 @@ jobs:
           archive_output: false
           cache: true
 
+      - name: Collect APK
+        shell: bash
+        run: cp "$HOME/.local/share/godot/builds/Android/Evolution-Age-Ascension.apk" build/Evolution-Age-Ascension.apk
+
       - name: Upload installable APK
         uses: actions/upload-artifact@v4
         with:
