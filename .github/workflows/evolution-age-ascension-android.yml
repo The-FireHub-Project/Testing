@@ -80,6 +80,32 @@ jobs:
         shell: bash
         run: sdkmanager "platforms;android-34" "build-tools;34.0.0"
 
+      - name: Configure Godot Android signing
+        shell: bash
+        run: |
+          mkdir -p "$HOME/.android" "$HOME/.config/godot"
+          keytool -genkeypair -v \
+            -keystore "$HOME/.android/debug.keystore" \
+            -storepass android \
+            -alias androiddebugkey \
+            -keypass android \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -dname "CN=Android Debug,O=Age Ascension,C=BA"
+          cat > "$HOME/.config/godot/editor_settings-4.tres" <<EOF
+          [gd_resource type="EditorSettings" format=3]
+
+          [resource]
+          export/android/android_sdk_path = "$ANDROID_HOME"
+          export/android/java_sdk_path = "$JAVA_HOME"
+          export/android/debug_keystore = "$HOME/.android/debug.keystore"
+          export/android/debug_keystore_user = "androiddebugkey"
+          export/android/debug_keystore_pass = "android"
+          export/android/force_system_user = false
+          export/android/shutdown_adb_on_exit = true
+          EOF
+
       - name: Export Android APK
         id: export
         uses: firebelley/godot-export@v6.0.0
