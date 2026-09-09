@@ -25,6 +25,7 @@ jobs:
           mkdir -p build
           base64 --decode experiments/evolution-age-ascension/game.zip.b64 > build/game.zip
           unzip -q build/game.zip -d build
+          sed -i '/^\[rendering\]/a textures/vram_compression/import_etc2_astc=true' build/evolution_age_ascension/project.godot
           cat > build/evolution_age_ascension/export_presets.cfg <<'EOF'
           [preset.0]
           name="Android"
